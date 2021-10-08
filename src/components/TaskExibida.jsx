@@ -1,7 +1,7 @@
 import React from "react";
 import './taskStyle.css';
 
-const TaskExibida = ({tarefa, handleTaskClick}) => {
+const TaskExibida = ({tarefa, handleTaskClick, handleTaskDeletion}) => {
         return(
             <div 
                 className="task-container"
@@ -9,6 +9,10 @@ const TaskExibida = ({tarefa, handleTaskClick}) => {
             >
                 <div className="task-title" onClick={() => handleTaskClick(tarefa.id)}>
                     {tarefa.title}
+                </div>
+
+                <div className="btn-container-tasks">
+                    <button onClick={() => handleTaskDeletion(tarefa.id)} className="remove-task-btn">X</button>
                 </div>
             </div>
         );
