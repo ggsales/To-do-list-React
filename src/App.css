@@ -6,4 +6,5 @@
     border: 2px solid rgb(208, 111, 21);
     padding: 30px;
     border-radius: 10px;
+    overflow-y: auto;
 }
