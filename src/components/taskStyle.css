@@ -9,5 +9,8 @@
     font-weight: 700;
     font-size: 15px;
     align-items: center;
+}
+
+.task-title{
     cursor: pointer;
 }
