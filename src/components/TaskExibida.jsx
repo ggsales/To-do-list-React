@@ -1,5 +1,6 @@
 import React from "react";
 import './taskStyle.css';
+import {CgClose, CgInfo} from 'react-icons/cg'
 
 const TaskExibida = ({tarefa, handleTaskClick, handleTaskDeletion}) => {
         return(
@@ -12,7 +13,19 @@ const TaskExibida = ({tarefa, handleTaskClick, handleTaskDeletion}) => {
                 </div>
 
                 <div className="btn-container-tasks">
-                    <button onClick={() => handleTaskDeletion(tarefa.id)} className="remove-task-btn">X</button>
+                    <button 
+                            className="see-task-details-btn"
+                        >
+                            <CgInfo/>        
+                    </button>
+
+                    <button 
+                        onClick={() => handleTaskDeletion(tarefa.id)}
+                        className="remove-task-btn"
+                    >
+                        <CgClose />        
+                    </button>
+                    
                 </div>
             </div>
         );
