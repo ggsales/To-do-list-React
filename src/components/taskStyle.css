@@ -22,4 +22,8 @@
     color: rgb(208, 111, 21);
     cursor: pointer;
 }
-
+.btn-container-tasks{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
